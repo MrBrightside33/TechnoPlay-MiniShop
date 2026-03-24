@@ -1,0 +1,30 @@
+.Sidebar {
+  background-color: #d7ffd8;
+}
+
+.Technoplaylogo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  margin-left: 3px;
+}
+
+.logos {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  
+}
+
+.title {
+  display:flex;
+  font-size: 18px;
+  font-weight: semi-bold;
+  color: #000000;
+  margin-top: 10px;
+  align-items: center;
+  letter-spacing: -3px;
+  margin-right: 5px;
+}
+
