@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Loginpage from './Loginpage/Loginpage';
 import Header from './Header/Header';
 import Homepage from './Homepage/Homepage';
@@ -21,7 +21,8 @@ const App = () => {
     <div>
     <Router>
       <Routes>
-        <Route path="/" element={<><Header /><Loginpage /></>} /> 
+        <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="/login" element={<><Header /><Loginpage /></>} />
         <Route path="/home" element={<Homepage />} />
         <Route path="/signup" element={<><Header /><Signup /></>} />
         <Route path="/forgot" element={<><Header /><Forget /></>} />
